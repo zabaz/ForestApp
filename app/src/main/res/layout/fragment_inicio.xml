@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="v1.forestapp.com.forestapp.InicioFragment">
+
+
+    <ViewFlipper
+        android:id="@+id/bckgrndViewFlipper1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/bckgrndImageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/picture2"/>
+        <ImageView
+            android:id="@+id/bckgrndImageView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/picture3"/>
+
+        <ImageView
+            android:id="@+id/bckgrndImageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/picture1"/>
+
+    </ViewFlipper>
+    <Button
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:padding="@dimen/fab_margin"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/boton"
+        android:layout_weight="1"
+        android:textColor="@color/textoColor"
+        android:id="@+id/btn_qr"
+        android:layout_gravity="right|bottom" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="@dimen/fab_margin"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/noticiaslogo"
+        android:layout_weight="1"
+        android:textColor="@color/textoColor"
+        android:id="@+id/btn_new"
+        android:layout_gravity="right|center_vertical"
+        android:layout_column="13"
+        android:nestedScrollingEnabled="false"
+        />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:padding="@dimen/fab_margin"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/inventario2"
+        android:layout_weight="1"
+        android:textColor="@color/textoColor"
+        android:id="@+id/btn_inventario"
+        android:layout_gravity="right|top"
+        android:layout_column="13" />
+
+</FrameLayout>
