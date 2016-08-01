@@ -35,7 +35,6 @@ public class InicioFragment extends Fragment {
             public void onClick(View v)
             {
                 // do something
-
                 try {
                     NoticiasFragment Frag = new NoticiasFragment();
                     getActivity().getFragmentManager().beginTransaction().replace(R.id.content_frame,Frag).commit();
@@ -51,7 +50,6 @@ public class InicioFragment extends Fragment {
             public void onClick(View v)
             {
                 // do something
-
                 try {
                     ListaInventarioFragment Frag = new ListaInventarioFragment();
                     getActivity().getFragmentManager().beginTransaction().replace(R.id.content_frame,Frag).commit();
@@ -68,7 +66,6 @@ public class InicioFragment extends Fragment {
             public void onClick(View v)
             {
                 // do something
-
                 try {
                     QRFragment Frag = new QRFragment();
                     getActivity().getFragmentManager().beginTransaction().replace(R.id.content_frame,Frag).commit();

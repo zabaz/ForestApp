@@ -10,16 +10,22 @@
             android:id="@+id/mi_navegador"
             android:icon="@drawable/noticias"
             android:title="Noticia" />
-
         <item
             android:id="@+id/inventario"
             android:icon="@drawable/inventario"
             android:title="Inventario" />
-        <item
-            android:id="@+id/acerdade"
-            android:icon="@drawable/acercade"
-            android:title="Acerca de" />
     </group>
+    <group android:id="@+id/grupo2"
+        android:checkableBehavior="single">
+            <item
+                android:id="@+id/acerdade"
+                android:icon="@drawable/acercade"
+                android:title="Acerca de"/>
+            <item android:id="@+id/idsalir"
+                android:icon="@drawable/salir"
+                android:title="Salir"/>
+    </group>
+
 
 
 </menu>

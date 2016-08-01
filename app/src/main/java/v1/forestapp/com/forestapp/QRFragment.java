@@ -21,50 +21,38 @@ import me.dm7.barcodescanner.zxing.ZXingScannerView;
  */
 public class QRFragment extends Fragment implements ZXingScannerView.ResultHandler {
 
-
     private ZXingScannerView mScannerView;
-
 
     public QRFragment() {
         // Required empty public constructor
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+        // Infla el diseño de este fragmento.
         View Vista = inflater.inflate(R.layout.fragment_qr, container, false);
 
-        mScannerView = new ZXingScannerView(Vista.getContext());   // Programmatically initialize the scanner view
+        mScannerView = new ZXingScannerView(Vista.getContext());//Mediante programacion inicia la vista del scanner.
 
         mScannerView.setResultHandler(this); // Register ourselves as a handler for scan results.
-        mScannerView.startCamera();         // Start camera
-
-
-
-        //
-
+        mScannerView.startCamera();         // Inicia la camara
 
         return mScannerView;
     }
-    @Override
-    public void onPause(){
-        super.onPause();
-        mScannerView.stopCamera();
-    }
-
 
     @Override
     public void handleResult(Result rawResult) {
-        Log.e("handler", rawResult.getText()); // Prints scan results
-        Log.e("handler", rawResult.getBarcodeFormat().toString()); // Prints the scan format (qrcode)
+        Log.e("handler", rawResult.getText()); //Imprime los resultados del análisis.
+        Log.e("handler", rawResult.getBarcodeFormat().toString()); //Imprime el formato de exploración(qrcode)
 
-        // show the scanner result into dialog box.
+        //Muestra el resultado del escáner en el cuadro de diálogo .
         AlertDialog.Builder builder = new AlertDialog.Builder(this.getActivity());
         builder.setTitle("Scan Result");
         builder.setMessage(rawResult.getText());
         AlertDialog alert1 = builder.create();
         alert1.show();
+        //Reanuda la camara para scannear nuevamente.
+        mScannerView.resumeCameraPreview(this);
     }
 }

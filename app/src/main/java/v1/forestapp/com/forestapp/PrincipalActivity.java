@@ -80,18 +80,11 @@ public class PrincipalActivity extends AppCompatActivity
             getSupportActionBar().setTitle(item.getTitle());
         }
         else if (id == R.id.acerdade) {
-
-            fragmento = new AcercaFragment();
-            fragmentTransaction = true;
+            fragmento = new DialogFragmentAcerca();
+            FragmentManager fm = getFragmentManager();
+            DialogFragmentAcerca dialogFragment = new DialogFragmentAcerca ();
+            dialogFragment.show(fm, "Sample Fragment");
         }
-        if (fragmentTransaction) {
-            fragmentManager.beginTransaction()
-                    .replace(R.id.content_frame, fragmento)
-                    .commit();
-            item.setChecked(true);
-            getSupportActionBar().setTitle(item.getTitle());
-        }
-
             DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
             drawer.closeDrawer(GravityCompat.START);
             return true;
