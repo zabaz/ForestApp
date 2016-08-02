@@ -85,6 +85,12 @@ public class PrincipalActivity extends AppCompatActivity
             DialogFragmentAcerca dialogFragment = new DialogFragmentAcerca ();
             dialogFragment.show(fm, "Sample Fragment");
         }
+        else if (id == R.id.idsalir){
+            fragmento = new ExitFragment();
+            FragmentManager fm = getFragmentManager();
+            ExitFragment dialogFragment = new ExitFragment();
+            dialogFragment.show(fm,"Sample Fragment");
+        }
             DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
             drawer.closeDrawer(GravityCompat.START);
             return true;

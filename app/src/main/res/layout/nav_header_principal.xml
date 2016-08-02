@@ -21,7 +21,7 @@
         android:layout_width="306dp"
         android:layout_height="64dp"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:src="@drawable/forestapp1"
+        android:src="@drawable/forestapp2"
         android:id="@+id/imageView"
         android:layout_weight="0.10"
         android:layout_marginLeft="-40dp"
