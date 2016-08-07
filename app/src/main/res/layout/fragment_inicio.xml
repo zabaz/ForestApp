@@ -15,39 +15,39 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/picture2"/>
+            android:src="@drawable/canaguate1"/>
         <ImageView
             android:id="@+id/bckgrndImageView3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/picture3"/>
+            android:src="@drawable/pino2"/>
 
         <ImageView
             android:id="@+id/bckgrndImageView1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/picture1"/>
+            android:src="@drawable/arbolmango"/>
 
     </ViewFlipper>
-    <Button
-        android:layout_width="65dp"
-        android:layout_height="65dp"
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:padding="@dimen/fab_margin"
         android:layout_margin="@dimen/activity_horizontal_margin"
-        android:background="@drawable/boton"
+        android:background="@drawable/obturador"
         android:layout_weight="1"
         android:textColor="@color/textoColor"
         android:id="@+id/btn_qr"
         android:layout_gravity="right|bottom" />
 
-    <Button
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:padding="@dimen/fab_margin"
         android:layout_margin="@dimen/activity_horizontal_margin"
-        android:background="@drawable/noticiaslogo"
+        android:background="@drawable/mundial"
         android:layout_weight="1"
         android:textColor="@color/textoColor"
         android:id="@+id/btn_new"
@@ -56,12 +56,12 @@
         android:nestedScrollingEnabled="false"
         />
 
-    <Button
-        android:layout_width="60dp"
+    <ImageButton
+        android:layout_width="70dp"
         android:layout_height="70dp"
         android:padding="@dimen/fab_margin"
         android:layout_margin="@dimen/activity_horizontal_margin"
-        android:background="@drawable/inventario2"
+        android:background="@drawable/portapapeles"
         android:layout_weight="1"
         android:textColor="@color/textoColor"
         android:id="@+id/btn_inventario"

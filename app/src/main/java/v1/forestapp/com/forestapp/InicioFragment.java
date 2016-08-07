@@ -1,15 +1,15 @@
 package v1.forestapp.com.forestapp;
 
+import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.app.Fragment;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ViewFlipper;
 
 
@@ -28,7 +28,7 @@ public class InicioFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_inicio,container, false);
 
-        Button button = (Button) view.findViewById(R.id.btn_new);
+        ImageButton button = (ImageButton) view.findViewById(R.id.btn_new);
         button.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -43,7 +43,7 @@ public class InicioFragment extends Fragment {
                 }
             }
         });
-        Button button1 = (Button) view.findViewById(R.id.btn_inventario);
+        ImageButton button1 = (ImageButton) view.findViewById(R.id.btn_inventario);
         button1.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -59,7 +59,7 @@ public class InicioFragment extends Fragment {
             }
         });
 
-        Button button2 = (Button) view.findViewById(R.id.btn_qr);
+        ImageButton button2 = (ImageButton) view.findViewById(R.id.btn_qr);
         button2.setOnClickListener(new View.OnClickListener()
         {
             @Override

@@ -8,14 +8,39 @@ package v1.forestapp.com.forestapp;
 public class ArbolDTO {
 
 
-    public String Nombre;
+    private String titulo;
+    private String subtitulo;
+    private int imagen;
 
-    public String getNombre() {
-        return Nombre;
+    public ArbolDTO(String titulo, String subtitulo, int imagen) {
+        this.titulo = titulo;
+        this.subtitulo = subtitulo;
+        this.imagen = imagen;
     }
 
-    public void setNombre(String nombre) {
-        Nombre = nombre;
+    public String getTitulo() {
+
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getSubtitulo() {
+        return subtitulo;
+    }
+
+    public void setSubtitulo(String subtitulo) {
+        this.subtitulo = subtitulo;
+    }
+
+    public int getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(int imagen) {
+        this.imagen = imagen;
     }
 }
 
