@@ -9,6 +9,12 @@
         android:id="@+id/bckgrndViewFlipper1"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/bckgrndImageView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/canaguate2"/>
 
         <ImageView
             android:id="@+id/bckgrndImageView2"
@@ -29,6 +35,7 @@
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
             android:src="@drawable/arbolmango"/>
+
 
     </ViewFlipper>
     <ImageButton

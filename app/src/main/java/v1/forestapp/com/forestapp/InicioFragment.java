@@ -86,7 +86,7 @@ public class InicioFragment extends Fragment {
         viewFlipper.setOutAnimation(fade_out);
 
         viewFlipper.setAutoStart(true);
-        viewFlipper.setFlipInterval(5000);
+        viewFlipper.setFlipInterval(4000);
         viewFlipper.startFlipping();
 
 
