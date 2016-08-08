@@ -48,7 +48,7 @@ public class QRFragment extends Fragment implements ZXingScannerView.ResultHandl
 
         //Muestra el resultado del escáner en el cuadro de diálogo .
         AlertDialog.Builder builder = new AlertDialog.Builder(this.getActivity());
-        builder.setTitle("Scan Result");
+        builder.setTitle("");
         builder.setMessage(rawResult.getText());
         AlertDialog alert1 = builder.create();
         alert1.show();
